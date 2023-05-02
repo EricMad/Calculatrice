@@ -1,0 +1,52 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./math-1547018_1280.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(6px);
+}
+.calculatrice {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 15px;
+}
+.ecran {
+  width: 100%;
+  height: 130px;
+  background-color: rgb(193, 173, 147);
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 10px;
+  font-size: 40px;
+}
+.touches {
+  display: grid;
+  grid-template-columns: repeat(4, 70px);
+  grid-template-rows: repeat(5, 70px);
+  grid-gap: 3px;
+}
+.touche {
+  background-color: whitesmoke;
+  border-radius: 15px;
+  font-weight: bold;
+}
+.touche-egale {
+  width: 140px;
+}
